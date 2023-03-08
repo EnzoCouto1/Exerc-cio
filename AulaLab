@@ -1,0 +1,43 @@
+echo "# Exerc-cio" >> README.md 
+git init 
+git add README.md 
+git commit -m "first commit" 
+git branch -M main 
+git remote add origin https://github.com/EnzoCouto1/Exerc-cio. git
+ git push -u origem principal
+ 
+ 
+ import java.util.Scanner;
+ public class Main { 
+public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double TP = 0;//Total a Pagar
+        double desconto = 0;
+        System.out.println("A-Alcool  G-Gasolina");
+        String Tipo = sc.nextLine();
+        System.out.println("Quantidade de Litros:");
+        int x = sc.nextInt();
+        if(Tipo.equals("A"))
+        {
+            TP = (x * 4.90);
+            System.out.println("O cliente pagaria: "+TP + " se não houvesse desconto");
+            if(x > 20)
+                desconto = TP*(0.06);
+            else
+                desconto = TP*(0.04);
+            TP -= desconto;
+        }
+        if(Tipo.equals("G"))
+        {
+            TP = (x * 6);
+            System.out.println("O cliente pagaria: "+TP + " se não houvesse desconto");
+            if(x > 20)
+                desconto = TP*(0.06);
+            else
+                desconto = TP*(0.04);
+            TP -= desconto;
+        }        System.out.println("Total a pagar com desconto: " + TP);
+        sc.close();//Fechando entrada de dados
+    }
+} 
+ 
